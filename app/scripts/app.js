@@ -1,4 +1,4 @@
- (function() {
+(function() {
      function config($stateProvider, $locationProvider) {
          $locationProvider
          .html5Mode({
@@ -21,7 +21,8 @@
          });
      }
      
-         angular
-         .module('blocJams', ['ui.router'])
-         .config(config);
+     angular
+        .module('blocJams', ['ui.router'])
+        .config(config);
+
  })();
