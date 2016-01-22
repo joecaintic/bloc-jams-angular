@@ -34,7 +34,12 @@
  
     currentSong = song;
  };
-      var playSong = function(song) {
+ /**
+ * @function playSong
+ * @desc Plays the loaded audio file as currentBuzzObject
+ * @param {Object} song
+ */
+         var playSong = function(song) {
          currentBuzzObject.play();
          song.playing = true;
      };
@@ -45,7 +50,7 @@
              playSong(song);
      } else if (currentSong === song) {
          if (currentBuzzObject.isPaused()) {
-             currentBuzzObject.play();
+             playSong(song);
 
          }
      }
